@@ -1,5 +1,5 @@
 :root {
-    --special-color: #ffc107;
+    --special-color: orange;
 }
 .navbar .container .egypt-flag img {
     width: 20px;
@@ -15,7 +15,7 @@
     --bs-btn-active-color: #fff;
     --bs-btn-active-bg: #ffc107;;
     --bs-btn-active-border-color: #ffc107;;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.9);
     --bs-btn-disabled-color: #ffc107;;
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #ffc107;;
@@ -33,5 +33,60 @@
     color: #212529;
 }
 .last-part a, .last-part i{
-    color: var(--special-color);
+    color: var(--special-color) !important;
+}
+.navbar .container .egypt-flag img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5%;
+}
+/* section nav */
+.super-man-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 5%;
+}
+.section-2 .navbar-nav {
+    align-items: center;
+}
+a.nav-link {
+    font-weight: 600;
+    font-size: 20px;
+    color: black;
+}
+/* main section  */
+.main-section {
+    background-color: rgb(248,249,250);
+}
+.main-section .aside-head {
+    background-color: #eee;
+}
+.accordion {
+    --bs-accordion-bg: transparent;
+}
+.accordion-button.special::after {
+    top: 2px;
+    left: 15px;
+    position: absolute;
+}
+.accordion-button {
+    position: relative;
+}
+.accordion-item {
+    border: none;
+}
+.accordion-item * {
+    padding: 2px;
+}
+.big-accordion 
+/* section price in part 2 in aside */
+.progress .progress-bar {
+    background-color: var(--special-color);
+}
+.progress .circle-me {
+    background-color: var(--special-color) !important;
+}
+/* last section */
+.last-box .d-flex {
+    width: 55%;
 }

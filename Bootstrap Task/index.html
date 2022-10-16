@@ -9,13 +9,15 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap flie -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="Css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
     <link rel="stylesheet" href="Css/main.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container m-auto">
             <a class="egypt-flag d-flex align-items-center col-1 text-decoration-none justify-content-start">
                 <img src="Images/download.png">
                 <p class="text-center ms-1 mb-1">العربية</p>
@@ -26,7 +28,7 @@
                   </button>
                 <input class="form-control me-2" type="search" placeholder="Search Here" aria-label="Search">
             </form>
-            <div class="last-part col-2">
+            <div class="last-part col-2 d-none d-md-inline-block">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,6 +51,212 @@
         </div>
       </nav>
 
+      <!-- links section -->
+      <nav class="navbar navbar-expand-lg bg-white row section-2">
+        <div class="container">
+          <!-- links -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Shoes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Slippers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kids</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sabot</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <img src="Images/VJ8non-superman-logo-free-download-transparent.png" class="super-man-logo">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">New Arrival</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- main section -->
+      <section class="main-section">
+        <div class="container d-flex flex-md-column justify-content-between row m-auto">
+          <div class="aside col-md-3">
+            <div class="first-section">
+              <div class="aside-head d-flex justify-content-between px-4 py-3 shadow-sm mb-3">
+                <div class="left-part ">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <h5 class="d-inline-block">Men's</h5>
+                </div>
+                <div class="right-part">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+
+              </div>
+              <div class="aside-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Accordion Item #1
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <!-------------------- children --------------------->  
+                        <div class="accordion accordion-flush" id="accordionFlushExample-child">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading1">
+                              <button class="accordion-button special collapsed ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample-child">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading2">
+                              <button class="accordion-button special collapsed ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample-child">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading3">
+                              <button class="accordion-button special collapsed ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3 " data-bs-parent="#accordionFlushExample-child">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-heading4">
+                              <button class="accordion-button special collapsed ps-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                                Accordion Item #1
+                              </button>
+                            </h2>
+                            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample-child">
+                              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- secand section in aside -->
+            <div class="secand-section mt-3">
+              <div class="aside-head d-flex justify-content-between px-4 py-3 shadow-sm mb-3">
+                <div class="left-part ">
+                  <i class="fa-solid fa-user-tie"></i>
+                  <h5 class="d-inline-block">Weman's</h5>
+                </div>
+                <div class="right-part">
+                  <i class="fa-solid fa-minus"></i>
+                </div>
+              </div>
+              <div class="aside-body">
+                <div class="box border border-5 p-2">
+                  <p class="Box-head">Price</p>
+                  <div class="d-flex justify-content-between">
+                    <p>Min Price:0$</p>
+                    <p>Max Price:500$</p>
+                  </div>
+                  <div class="position-relative m-4">
+                    <div class="progress" style="height: 5px;">
+                      <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 100%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem; background-color: #ffc107;">
+                      <a class="" style="color: white;">
+                        <i class="fa fa-circle bg-white rounded-circle"></i>
+                      </a>
+                    </button>
+                    <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem; background-color: #ffc107;">
+                      <a class="" style="color: white;">
+                        <i class="fa fa-circle bg-white rounded-circle"></i>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- three section in aside -->
+            <div class="three-section mt-3">
+              <div class="box border border-5 p-2">
+                <p class="Box-head">Color</p>
+                <div class="d-flex justify-content-between">
+                  <span class="rounded-circle bg-primary border p-1 border-4" style="width: 30px; height: 30px;"></span>
+                  <span class="rounded-circle bg-danger border p-1 border-4" style="width: 30px; height: 30px;"></span>
+                  <span class="rounded-circle bg-success border p-1 border-4" style="width: 30px; height: 30px;"></span>
+                  <span class="rounded-circle bg-dark border p-1 border-4" style="width: 30px; height: 30px;"></span>
+                  <span class="rounded-circle bg-white border p-1 border-4" style="width: 30px; height: 30px;"></span>
+                </div>
+              </div>
+            </div>
+            <!-- four section -->
+            <div class="four-section mt-3">
+              <div class="box border border-5 p-2">
+                <p class="Box-head">Size</p>
+                <div class="d-flex justify-content-between ">
+                  <span class="border border-4 position-relative" style="width: 50px; height: 50px;">
+                    <p class="position-absolute top-50 start-50 translate-middle">38</p>
+                  </span>
+                  <span class="border border-4 position-relative" style="width: 50px; height: 50px;">
+                    <p class="position-absolute top-50 start-50 translate-middle">39</p>
+                  </span>
+                  <span class="border border-4 position-relative" style="width: 50px; height: 50px;">
+                    <p class="position-absolute top-50 start-50 translate-middle">40</p>
+                  </span>
+                  <span class="border border-4 position-relative" style="width: 50px; height: 50px;">
+                    <p class="position-absolute top-50 start-50 translate-middle">41</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- last section -->
+            <div class="last-box border border-5 p-2 mt-3">
+              <div class="d-flex m-auto justify-content-between">
+                <button class="btn bg-dark" type="button">Button</button>
+                <button class="btn bg-dark" type="button">Button</button>
+              </div>
+            </div>
+          </div>
+<!-------------------- Main Middle --------------------->
+          <div class="amiddel col-8 bg-info"></div>
+        </div>
+
+      </section>
 
 
 
@@ -62,7 +270,8 @@
 
 
     <!-- bundle.js flie -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- <script src="Js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
   </body>
 </html>
