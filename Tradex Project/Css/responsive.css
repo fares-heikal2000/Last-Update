@@ -1,0 +1,10 @@
+@media screen and (max-width: 990px) {
+    nav .collapse .navbar-nav .dropdown .dropdown-menu {
+        display: none;
+    }
+    nav .collapse .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        width: 50%;
+        transform: none;
+    }
+}

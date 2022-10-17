@@ -1,0 +1,4 @@
+Notes to study it.
+
+1 - DataList input in From and it is more like a select input
+2 - 

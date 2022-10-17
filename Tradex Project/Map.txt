@@ -1,0 +1,44 @@
+Home page 
+	header
+	nav
+	sliders
+	about us
+	contntar
+	our services
+	our work
+	image section
+	our creative time
+	our pricing
+	subscribe
+	testimonial
+	latest blog
+	meet our clients
+	purchase now
+	footer
+	Doveloper Name
+
+
+Global Classes
+	Social Icons
+	Section Header
+		=> two div blue
+	Hover
+	Glasses Efect
+	p body
+
+
+
+Global Varibles
+--id-color : #0c65ed;
+
+
+
+
+
+
+
+
+quation ? 
+	-- how to make that space between the li and it's ul 
+
+	

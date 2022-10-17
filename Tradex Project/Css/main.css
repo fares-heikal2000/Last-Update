@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/* Global rules */
+:root {
+    --id-color : #0c65ed;
+}
+.hover-c {
+    color: var(--id-color);
+}
+.hover-b {
+    background-color: var(--id-color);
+}
+
+/* Start Custam */
+/* Start header */
+header {
+    background-color: var(--id-color);
+}
+header .container {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+}
+header .container .head-left {
+    color: white;
+    width: 45%;
+    align-items: center;
+}
+.social-icons a {
+    padding: 10px 5px;
+}
+.social-icons a i {
+    color: white;
+}
+header .container .head-left .address * {
+    padding: 10px 10px;
+}
+.rotate {
+    transform: rotate(-45deg);
+}
+/* End header */
+/* Start Nav */
+nav {
+    font-size: 14px;
+    font-weight: 600;
+}
+nav .collapse .navbar-nav .dropdown {
+    padding: 0 7px;
+}
+nav .collapse .navbar-nav .dropdown .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    transform: translateX(-20px);
+    opacity: 0;
+    border-top: 3px solid var(--id-color);
+    border-radius: 0 !important;
+}
+nav .collapse .navbar-nav .dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(10px);
+    transition-duration: 0.7s;
+}
+nav .collapse .navbar-nav .dropdown .dropdown-menu :not(:last-child){
+    border-bottom: 3px solid #eee;
+}
+nav .collapse .navbar-nav .dropdown:hover .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+}
+.nav-link {
+    color: black;
+}
+nav .collapse .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+    color: var(--id-color);
+}
+nav .collapse .navbar-nav a:hover {
+    color: var(--id-color);
+    background-color: white;
+    /* 000 */
+}
+/* End Nav */
+/* Start slider */
+.slider-section .slide .carousel-inner img {
+    height: 80vh;
+    filter: brightness(40%);
+}
+
+.carousel-indicators {
+    top: 0%;
+    left: 80%;
+    flex-direction: column;
+}
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border: 1px solid white !important;
+    margin-top: 20px !important;
+    background-color: white !important;
+}
+.carousel-indicators .active {
+    background-color: transparent !important;
+}
+.slider-section .carousel-inner .carousel-item .carousel-caption {
+    top: 30% !important;
+}
