@@ -6,6 +6,7 @@
 /* Global rules */
 :root {
     --id-color : #0c65ed;
+    --animate-delay: 0.5s;
 }
 .hover-c {
     color: var(--id-color);
@@ -13,7 +14,24 @@
 .hover-b {
     background-color: var(--id-color);
 }
-
+.effect {  /* effect Glasses */
+    position: relative;
+    overflow: hidden;
+}
+.effect:hover::after {
+    transform: translate(400px) rotate(30deg);
+}
+.effect::after {
+    content: "";
+    position: absolute;
+    top: -60%;
+    left: -40%;
+    width: 30%;
+    background-color: rgb(211 196 196 / 45%);
+    height: 200%;
+    transform: rotate(30deg);
+    transition-duration: 0.6s;
+}
 /* Start Custam */
 /* Start header */
 header {
@@ -85,7 +103,7 @@ nav .collapse .navbar-nav a:hover {
 /* Start slider */
 .slider-section .slide .carousel-inner img {
     height: 80vh;
-    filter: brightness(40%);
+    filter: brightness(30%);
 }
 
 .carousel-indicators {
@@ -104,5 +122,72 @@ nav .collapse .navbar-nav a:hover {
     background-color: transparent !important;
 }
 .slider-section .carousel-inner .carousel-item .carousel-caption {
-    top: 30% !important;
+    top: 37% !important;
 }
+.slider-section .carousel-inner .carousel-item .carousel-caption button {
+    width: 20%;
+}
+.slider-section .carousel-inner .carousel-item .carousel-caption :nth-child(4):hover {
+    background-color: var(--id-color) !important;
+}
+/* Start About Us */
+.about-us {
+    margin-bottom: 200px;
+
+}
+.header-seation {
+    margin: 150px auto 30px;
+    display: flex;
+}
+.head-side {
+    padding: 0;
+    margin: auto 0;
+}
+.header-seation .head-middle {
+    text-align: center;
+}
+.header-seation .head-middle p {
+    margin: auto;
+    padding: 0 5px;
+}
+.header-seation hr {
+    background-color: var(--id-color);
+    margin: 4px 0;
+}
+.header-seation hr:nth-child(1) {
+    height: 4px;
+    opacity: 0.8;
+    width: 50%;
+}
+.header-seation .head-side.right hr:nth-child(1) {
+    margin-left: auto;
+}
+.header-seation hr:nth-child(2) {
+    height: 2.7px;
+    opacity: 0.6;
+}
+.p-common {
+    color: #787575 ;
+    font-size: 18px;
+}
+.about-us .bady-about-me button {
+    background-color: var(--id-color);
+    color: white;
+}
+.about-us .bady-about-me .row .boxs-cont {
+    position: absolute;
+    background-color: white;
+    top: 5%;
+    left: 5%;
+}
+.about-img {
+    height: 120%;
+}
+.about-us .bady-about-me .about-box a {
+    color: black;
+}
+.about-us .bady-about-me .about-box:hover a ,
+.about-us .bady-about-me .about-box:hover .about-box-info p:first-child {
+    color: var(--id-color);
+}
+/* End About Us */
