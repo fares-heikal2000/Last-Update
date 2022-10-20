@@ -6,6 +6,7 @@ Home page
 	contntar
 	our services
 	our work
+	-------------------
 	image section
 	our creative time
 	our pricing

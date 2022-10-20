@@ -8,6 +8,9 @@
         width: 50%;
         transform: none;
     }
+    nav .collapse .navbar-nav .dropdown {
+        padding: 0;
+    }
     /* Start Slider */
     .carousel-inner {
         height: 50vh !important;
@@ -29,10 +32,30 @@
     .thrid-col {
         margin-top: 20px;
     }
-    .boxs-cont .about-box a,
-    .boxs-cont .about-box i {
-        width: 27px;
-        height: 27px;
+    .about-img {
+        height: 100%;
+        max-width: 100%;
     }
+    /* Start Counter */
+    .aInCounterBox {
+        width: 90px;
+        height: 90px;
+    }
+    .aInCounterBox i {
+        font-size: 40px;
+    }
+    .counter-info h4 {
+        font-weight: 700;
+        font-size: x-large;
+    }
+    .counter-info .p-common {
+        font-size: 18px;
+    }
+    /* End Counter */
+    /* Start Our Services */
+    .c-white.p-common.w-75 {
+        width: 100% !important;
+    }
+    /* End Our Services */
 
 }
