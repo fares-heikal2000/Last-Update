@@ -57,5 +57,18 @@
         width: 100% !important;
     }
     /* End Our Services */
+    .ourCreativeTeam .ourTeamItem .teamInfo {
+        bottom: -42.5%;
+    }
 
+}
+@media screen and (max-width: 1200px) {
+    .ourCreativeTeam .ourTeamItem .teamInfo {
+        bottom: -42.5%;
+    }
+}
+@media screen and (max-width: 770px) {
+    .ourCreativeTeam .ourTeamItem .teamInfo {
+        bottom: -35.5%;
+    }
 }

@@ -74,6 +74,10 @@
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 0;
 }
+.learn-more {
+    background-color: var(--id-color) !important;
+    color: white !important;
+}
 /* Start Custam */
 /* Start header */
 header {
@@ -182,10 +186,9 @@ nav .collapse .navbar-nav a:hover {
     margin-bottom: 200px;
 
 }
-.about-us .bady-about-me button,
-.learn-more {
-    background-color: var(--id-color);
-    color: white;
+.about-us .bady-about-me button {
+    background-color: var(--id-color) !important;
+    color: white !important;
 }
 .about-us .bady-about-me .row .boxs-cont {
     position: absolute;
@@ -322,3 +325,81 @@ nav .collapse .navbar-nav a:hover {
     background-size: cover;
 }
 /* End Image */
+/* Start Our Creative Team  */
+.ourCreativeTeam {
+    background-color: #f9f9f9;
+    /* padding-bottom: 20px; */
+}
+.ourCreativeTeam .ourTeamItem {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.ourCreativeTeam .ourTeamItem:hover .teamInfo {
+    bottom: 0%;
+}
+.ourCreativeTeam .ourTeamItem:hover .teamInfo span {
+    border: none;
+    transition-delay: 0.3s;
+}
+/* .ourCreativeTeam .ourTeamItem:hover .teamInfo .movedPart .social-icons  {
+    transform: scaleY(1);
+} */
+.ourCreativeTeam .ourTeamItem .teamInfo {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: -36%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.3s;
+}
+.ourCreativeTeam .ourTeamItem .teamInfo span {
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    color: var(--id-color);
+    padding-bottom: 10px;
+    border-bottom: #000 2px solid;
+    transition: border 0s 0.3s;
+}
+.ourCreativeTeam .ourTeamItem .teamInfo .movedPart {
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourCreativeTeam .ourTeamItem .teamInfo .movedPart .p-common p {
+    margin-bottom: 0;
+}
+.ourCreativeTeam .ourTeamItem .teamInfo .movedPart .social-icons {
+    background-color: var(--id-color);
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    padding: 0 20%;
+    justify-content: space-between;
+    font-size: 14px;
+    border: 1px solid black;
+    /* transform: scaleY(0.02);
+    transition-duration: 0.3S;
+    transition-delay: 0.2S; */
+}
+.ourCreativeTeam .ourTeamItem .teamInfo .movedPart .social-icons a {
+    padding: 5px 0;
+}
+.ourCreativeTeam .ourTeamItem .teamInfo .movedPart .social-icons a:hover i {
+    color: black;
+}
+/* End Our Creative Team  */
+
+/* Start Our Pricing  */
+/* .nav .nav-item .right-btn {
+    color: #000 !important;
+} */
+
+/* End Our Pricing  */
