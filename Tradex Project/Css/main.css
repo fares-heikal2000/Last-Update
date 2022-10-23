@@ -2,6 +2,8 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 /* Global rules */
 :root {
@@ -17,6 +19,14 @@
 .effect {  /* effect Glasses */
     position: relative;
     overflow: hidden;
+}
+.effect.special {
+    background-color: white !important;
+    color: var(--id-color) !important;
+    border-color: var(--id-color) !important;
+}
+.effect.special::after {
+    background-color: #0c65ed;
 }
 .effect:hover::after {
     transform: translate(400px) rotate(30deg);
@@ -312,9 +322,6 @@ nav .collapse .navbar-nav a:hover {
     transition: all 0.3s ease;
     visibility: visible;
 }
-.ourWorkItem:hover img  {
-    
-}
 /*   End Our Work */
 /* Srart Image */
 .image {
@@ -328,7 +335,6 @@ nav .collapse .navbar-nav a:hover {
 /* Start Our Creative Team  */
 .ourCreativeTeam {
     background-color: #f9f9f9;
-    /* padding-bottom: 20px; */
 }
 .ourCreativeTeam .ourTeamItem {
     display: flex;
@@ -401,5 +407,158 @@ nav .collapse .navbar-nav a:hover {
 /* .nav .nav-item .right-btn {
     color: #000 !important;
 } */
+.ourPricing {
+    height: 100vh;
+}
+.ourPricing .priceCont .Cont {
+    border: 1px solid #eaeaea;
+}
+.ourPricing .priceCont ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 0 10%;
+    
+}
+.ourPricing .priceCont ul h5 {
+    font-size: 18px;
+}
+.ourPricing .priceCont ul li  {
+    padding: 30px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+.ourPricing .priceCont ul :nth-child(4) {
+    border-top: 1px solid #eaeaea;
+}
 
+.ourPricing.priceCont ul * {
+    margin: 0 auto;
+}
+.ourPricing .priceCont .under-line {
+    width: 20%;
+    border: none;
+    border-bottom: var(--id-color) 2px solid;
+    opacity: 0.6;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.ourPricing .priceCont span {
+    color: var(--id-color);
+}
+.ourPricing .priceCont .Cont li,
+.ourPricing .priceCont .Cont h2
+{
+    width: 100% !important;
+    text-align: center;
+}
+.ourPricing .priceCont ul button {
+    background-color: var(--id-color);
+    padding:  20px 40px 15px;
+    color: white;
+    font-size: 14px;
+
+}
+.ourPricing .priceCont .Cont .line-1 i {
+    color: var(--id-color);
+    font-size: 18px;
+}
+.ourPricing .row .nav-item .nav-link {
+    padding: 15px 60px;
+    font-size: 18px;
+    border: 1px solid var(--id-color);
+    color: var(--id-color);
+}
+.ourPricing .row .nav-item .nav-link.active {
+    color: white !important;
+}
+.ourPricing .row .nav-item .nav-link.left-btn {
+    border-radius: 50px 0 0 50px;
+}
+.ourPricing .row .nav-item .nav-link.right-btn {
+    border-radius: 0 50px 50px 0;
+
+}
 /* End Our Pricing  */
+/* Start Subscribe */
+
+.subscribe {
+    padding: 85px 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+.subscribe .sub-right {
+    width: 40%;
+}
+.subscribe .sub-left {
+    width: 40%;
+}
+.subscribe .sub-right input {
+    outline: none;
+    font-size: 14px;
+    height: 44px !important;
+}
+.subscribe .sub-left h2 {
+    font-size: 40px;
+}
+.subscribe .sub-left i {
+    font-size: 55px;
+    margin-right: 20px;
+}
+.subscribe .sub-right button {
+    padding: 8px 40px;
+    background-color: var(--id-color);
+    color: white;
+    margin-left: 20px;
+    height: 44px !important;
+
+}
+.sub-right
+/* Start Subscribe */
+/* Start Latest Blog */
+.blog {
+    background-color: #f9f9f9;
+}
+.blog .blog-card:hover .social-icons {
+    background-color: var(--id-color) !important;
+}
+.blog .blog-card:hover .smallNotes:after {
+    background-image: linear-gradient(to right, var(--id-color) 25%, var(--id-color)  25% , var(--id-color)  100%) !important;
+}
+.blog .blog-card .blogCardInfo .fPart .social-icons {
+    display: flex;
+    padding: 20px 0;
+    width: 45px;
+    background-color: #1a1a1a;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+}
+.blog .blog-card .blogCardInfo .fPart .social-icons a {
+    margin: auto;
+}
+.blog .blog-card .blogCardInfo .sPart .smallNotes {
+    color: #858585;
+    font-size: 12px;
+    position: relative;
+}
+.blog .blog-card .blogCardInfo .sPart .smallNotes:after {
+    transition: all 1s linear;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    background-image: linear-gradient(to right, var(--id-color) 25%, #eaeaea 25% , #eaeaea 100%);
+    bottom: 0;
+    left: 0;
+}
+.blog .blog-card .blogCardInfo .sPart .smallNotes a {
+    text-decoration: none;
+    color: inherit;
+}
+.blog .blog-card .blogCardInfo .sPart .smallNotes a:hover {
+    color: var(--id-color);
+}
+.blog .blog-card .blogCardInfo .sPart .p-common {
+    font-size: 14px;
+}

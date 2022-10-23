@@ -60,8 +60,20 @@
     .ourCreativeTeam .ourTeamItem .teamInfo {
         bottom: -42.5%;
     }
-
+    .subscribe .container {
+        flex-direction: column;
+    }
+    .subscribe .container .sub-left,
+    .subscribe .container .sub-right {
+        width: 100%;
+        margin: 10px 0;
+    }
+    /* Start Our Pricing */
+    .ourPricing .row .nav-item .nav-link {
+        padding: 15px 25px;
+    }
 }
+
 @media screen and (max-width: 1200px) {
     .ourCreativeTeam .ourTeamItem .teamInfo {
         bottom: -42.5%;
@@ -70,5 +82,27 @@
 @media screen and (max-width: 770px) {
     .ourCreativeTeam .ourTeamItem .teamInfo {
         bottom: -35.5%;
+    }
+    /* .ourCreativeTeam .header-seation .head-middle{
+        font-size: 20px !important;
+        padding: 0;
+        margin: 0;
+    }
+    .ourCreativeTeam .header-seation hr {
+
+    } */
+}
+@media screen and (max-width: 400px) {
+    .ourCreativeTeam .header-seation .head-middle {
+        padding: 0 !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .ourCreativeTeam .header-seation .head-middle{
+       width: 50%;
+    }
+    .ourPricing .row .nav-item .nav-link {
+        padding: 10px 15px;
     }
 }
