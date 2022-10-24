@@ -83,21 +83,26 @@
     .ourCreativeTeam .ourTeamItem .teamInfo {
         bottom: -35.5%;
     }
-    /* .ourCreativeTeam .header-seation .head-middle{
-        font-size: 20px !important;
-        padding: 0;
-        margin: 0;
+    .purchase .container i {
+        display: none;
     }
-    .ourCreativeTeam .header-seation hr {
-
-    } */
+    .purchase .container .l-part button {
+        font-size: 14px;
+    }
+    .purchase .container .r-part h2 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .purchase .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 400px) {
     .ourCreativeTeam .header-seation .head-middle {
         padding: 0 !important;
     }
 }
-
 @media screen and (max-width: 300px) {
     .ourCreativeTeam .header-seation .head-middle{
        width: 50%;

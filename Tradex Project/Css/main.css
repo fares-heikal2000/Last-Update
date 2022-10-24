@@ -521,8 +521,17 @@ nav .collapse .navbar-nav a:hover {
 .blog .blog-card:hover .social-icons {
     background-color: var(--id-color) !important;
 }
-.blog .blog-card:hover .smallNotes:after {
-    background-image: linear-gradient(to right, var(--id-color) 25%, var(--id-color)  25% , var(--id-color)  100%) !important;
+.blog .blog-card:hover .smallNotes .backGround {
+    width: 100% !important;
+}
+.blog .blog-card:hover .img-div img {
+    transform: scale(1.1) rotate(-2deg);
+}
+.blog .blog-card .img-div img {
+    transition: all 0.2s linear;
+}
+.blog .blog-card .img-div {
+    overflow: hidden;
 }
 .blog .blog-card .blogCardInfo .fPart .social-icons {
     display: flex;
@@ -541,14 +550,13 @@ nav .collapse .navbar-nav a:hover {
     font-size: 12px;
     position: relative;
 }
-.blog .blog-card .blogCardInfo .sPart .smallNotes:after {
-    transition: all 1s linear;
-    content: "";
+.blog .blog-card .blogCardInfo .sPart .smallNotes .backGround {
+    transition: width 0.3s linear;
     position: absolute;
-    width: 100%;
+    width: 25%;
     height: 2px;
-    background-color: #000;
-    background-image: linear-gradient(to right, var(--id-color) 25%, #eaeaea 25% , #eaeaea 100%);
+    background-color: var(--id-color);
+    /* background-image: linear-gradient(to right, var(--id-color) 25%, #eaeaea 25% , #eaeaea 100%); */
     bottom: 0;
     left: 0;
 }
@@ -562,3 +570,103 @@ nav .collapse .navbar-nav a:hover {
 .blog .blog-card .blogCardInfo .sPart .p-common {
     font-size: 14px;
 }
+.blog .blog-card .blogCardInfo .sPart .read {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+.blog .blog-card .blogCardInfo .sPart .read .pp {
+    font-size: 14px;
+}
+.blog .blog-card .blogCardInfo .sPart .read i {
+    transition-duration: 0.2s;
+}
+.blog .blog-card .blogCardInfo .sPart .read:hover i {
+    margin-left: 10px;
+}
+/* Start Meet Our Clients */
+.clinets {
+    padding: 100px 0;
+}
+.clinets .container .imgConts {
+    margin-left: 25%;
+}
+.clinets .container .imgConts img {
+    margin-bottom: 20px;
+}
+/* End Meet Our Clients */
+/* Start Purchase */
+.purchase {
+    padding: 70px 0;
+    background-color: var(--id-color);
+    color: white;
+}
+.purchase .container i {
+    position: absolute;
+    top: 20%;
+    transform: rotate(-45deg) translatey(-50%);
+    left: 0;
+    font-size: 100px;
+    opacity: 0.5;
+}
+.purchase .container .l-part button {
+    max-height: 45px;
+    min-width: 195px;
+    font-size: 18px;
+}
+/* End Purchase */
+/* Start Footer */
+footer {
+    padding: 100px 0;
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 14px;
+}
+footer .container .bord {
+    width: 15%;
+    height: 2px;
+    background-color: var(--id-color);
+    margin-bottom: 30px;
+}
+footer .container .contact i {
+    width: 30px;
+    font-size: 18px;
+}
+footer .container .contact .inner div:not(.bord) {
+    margin: 20px 0;
+}
+footer .container .post img {
+    width: 20%;
+    height: 100% !important;
+}
+footer .container .post .info a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s linear;
+}
+footer .container .post .info a:hover {
+    opacity: 0.7;
+}
+footer .container .post .info p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    color: #c6c6c6;
+    font-size: 13px;
+}
+.rotatex {
+    transform: rotate(-45deg) translateY(-5px);
+}
+footer .container .popular button {
+    padding: 0 10px;
+    height: 35px;
+    width: auto;
+    color: #1a1a1a !important;
+    font-size: 14px !important;
+    margin: 10px;
+    transition: all 0.2s linear;
+}
+footer .container .popular button:hover {
+    background-color: var(--id-color) !important;
+    color: white !important;
+}
+/* End footer */
