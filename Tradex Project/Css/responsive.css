@@ -72,6 +72,20 @@
     .ourPricing .row .nav-item .nav-link {
         padding: 15px 25px;
     }
+    /* start our clients */
+    .clinets .container .imgConts {
+        margin-left: 0;
+    }
+    .clinets .main-img {
+        display: none;
+    }
+    /* testimonial */
+    .testimonial .container .row .owl-carousel .item .card .row .col-md-3 {
+        padding-left: 0;
+    }
+    .testimonial .card  {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -96,6 +110,12 @@
     .purchase .container {
         flex-direction: column;
         align-items: center;
+    }
+    .subscribe .sub-left h2 {
+        font-size: 30px;
+    }
+    .subscribe .sub-left i {
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 400px) {

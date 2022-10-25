@@ -514,6 +514,48 @@ nav .collapse .navbar-nav a:hover {
 }
 .sub-right
 /* Start Subscribe */
+/*  */
+
+.cc , .owl-carousel .owl-nav .owl-prev {
+    background-color: var(--id-color) !important;
+    padding: 5px 20px !important;
+    border-radius: 50px 0 0 50px !important;
+    transition: all 0.2s linear;
+}
+.cc , .owl-carousel .owl-nav .owl-prev:hover {
+    background-color: #1a1a1a !important;
+}
+.owl-carousel .owl-nav button.owl-next {
+    background-color: var(--id-color) !important;
+    padding: 5px 20px !important;
+    border-radius: 0 50px 50px 0 !important;  
+    transition: all 0.2s linear;  
+}
+.owl-carousel .owl-nav button.owl-next:hover {
+    background-color: #1a1a1a !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot i {
+    font-size: 14px !important;
+    color: white !important;
+    margin: 5px !important;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    padding: 5px 20px !important;
+}
+.testimonial .container .row .owl-carousel .item .card .row .col-md-3 {
+    display: flex;
+    padding-left: 20px;
+}
+.testimonial .container .row .owl-carousel .item .card img{
+    width: 124px;
+    height: 124px;
+    margin: auto;
+}
+.testimonial .container .row .owl-carousel .item .card span {
+    color: var(--id-color);
+    font-size: 14px;
+}
+/*  */
 /* Start Latest Blog */
 .blog {
     background-color: #f9f9f9;
@@ -556,7 +598,6 @@ nav .collapse .navbar-nav a:hover {
     width: 25%;
     height: 2px;
     background-color: var(--id-color);
-    /* background-image: linear-gradient(to right, var(--id-color) 25%, #eaeaea 25% , #eaeaea 100%); */
     bottom: 0;
     left: 0;
 }
@@ -586,12 +627,29 @@ nav .collapse .navbar-nav a:hover {
 /* Start Meet Our Clients */
 .clinets {
     padding: 100px 0;
+    position: relative;
 }
 .clinets .container .imgConts {
     margin-left: 25%;
 }
-.clinets .container .imgConts img {
-    margin-bottom: 20px;
+.clinets .container .clinet .inner {
+    border: 1px solid #959595;
+    border-radius: 5px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+}
+.clinets .container .imgConts .clinet .inner img {
+    width: 150px;
+    height: 80px;
+    margin: 20px 60px;
+}
+.clinets .main-img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    filter: drop-shadow(-4px 8px 12px #666666);
+    z-index: -1;
 }
 /* End Meet Our Clients */
 /* Start Purchase */
@@ -670,3 +728,109 @@ footer .container .popular button:hover {
     color: white !important;
 }
 /* End footer */
+/* Start Under Footer */
+.underFooter {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    box-shadow: 0 0 18px 0 rgb(0 0 0 / 50%);
+    color: white;
+}
+.underFooter a {
+    margin: auto;
+    color: var(--id-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Start Under Footer */
+/* Start Scrool Button */
+.scroll {
+    position: fixed;
+    bottom: 5%;
+    left: 95%;
+    z-index: 99; 
+}
+.scroll a {
+    margin: auto;
+    display: flex;
+    background-color: var(--id-color);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.scroll i {
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+/* End Scrool Button */
+
+
+/* ------------------------------ Start Contact Page ------------------------------------ */
+/* Start Contact Slider */
+.contactSlider {
+    background-image: url(../Image/slider1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+    color: white;
+}
+.contactSlider .layOut {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 0 / 70%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+}
+.contactSlider .layOut h1 {
+    font-size: 50px;
+}
+.contactSlider .smallLayOut {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 40%);
+    color: white;
+}
+.contactSlider .smallLayOut a {
+    text-decoration: none;
+    color: white;
+}
+.contactInfo .container .row .Cont i {
+    color: var(--id-color);
+    font-size: 40px;
+}
+/* End Contact Slider */
+/* Start Get In Touch */
+.inTouch .Cont input {
+    border: none;
+    outline: none;
+}
+.inTouch .Cont hr {
+    width: 100%;
+}
+.inTouch .Cont input:focus {
+    background-color: var(--id-color);
+    height: 5px;
+}
+.inTouch textarea {
+    width: 100%;
+    resize: both !important;
+    overflow: auto !important;
+    border: none;
+    outline: none;
+}
+/* End Get In Touch */
+/* ------------------------------ End Contact Page ------------------------------------ */
