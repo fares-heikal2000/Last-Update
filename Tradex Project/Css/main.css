@@ -746,8 +746,12 @@ footer .container .popular button:hover {
 .scroll {
     position: fixed;
     bottom: 5%;
-    left: 95%;
-    z-index: 99; 
+    left: 86%;
+    /* 00000000000000000000000000000000000000000000000000000000000000000000 Eidte */
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration:0.3s;
 }
 .scroll a {
     margin: auto;
